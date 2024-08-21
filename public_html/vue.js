@@ -11,6 +11,7 @@ let working = false ;
 $(document).ready ( function () {
     vue_components.toolname = 'quickstatements' ;
 //    vue_components.components_base_url = 'https://tools.wmflabs.org/magnustools/resources/vue/' ; // For testing; turn off to use tools-static
+    vue_components.components_base_url = location.origin + '/magnustools/resources/vue/' ;
     Promise.all ( [
             vue_components.loadComponents ( ['wd-date','wd-link','tool-translate','tool-navbar','commons-thumbnail',
                 'vue_components/batch_access_mixin.html',
